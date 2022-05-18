@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face { /*quando a fonte for baixada devo utilizar o font-face.*/
+
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+*{/* criei uma configuração global para que nenhum elemento possua espaçamento por padrão.*/
+    margin: 0px;
+    padding: 0px;
+}
+:root{ /*:root é onde posso criar as minha variáveis*/
+
+   --fonte-android:'Android' 
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(217, 224, 190);
+}
+header{
+    color: white;
+    background-image: linear-gradient(to bottom,#5BA361,#28572C);
+    min-height: 190px;
+    padding-top: 40px;
+}
+header>h1{
+    font-family: Roboto Flex;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+header>p{
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px; /* dando espaçamentos na direita e embaixo na esquerda */
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 40px;/*dando espaço embaixo.*/
+    text-align: center;
+       
+}
+nav>a{
+    text-decoration: none;/*tirando traço do anchor.*/
+    color: white;
+    font-weight: bold;
+    transition-duration: .5s; /*tempo para aparecer o efeito hover*/
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+nav>a:hover{
+    background-color: rgb(47, 255, 151);
+}
+main{
+    min-width: 300px; /* definindo a largura minima para gerar responsividade*/
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 42%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main>h1{
+    padding-top: 10px;
+    font-family: var(--fonte-android);
+    color: #52886a;
+    
+}
+main>p{
+    
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;/*dar espaço entre as linhas*/
+    font-size: 1em;
+}
+main>p>strong{
+    color: #56A863;
+}
+main>h2{
+    font-family: var(--fonte-android);
+    color: #52886a;
+    background-image: linear-gradient(to right ,#c8ecd8,#edf8f2);
+}
+
+main>.pequena{
+    max-width: 350px; /*Definindo largura máxima*/
+    display: block; /*transformando imagem em bloco para posteriormente centraliza-la*/
+    margin: auto;
+}
+
+.video{
+    background-color: #28572C;
+    padding: 0px -20px 30px -20px ;
+    padding: 20px;
+    padding-bottom: 55%; /*Ao mexer nessa porcentagem eu faço sumir as barras pretas do videos nas laterais.*/
+    position: relative;/*utilizo a posição relativa para poder posicionar os itens que estiverem dentro desta div */
+    margin-bottom: 20px;
+}
+.video>iframe{
+    position: absolute; /*Um elemento com posição: absoluto; é posicionado em relação ao ancestral posicionado mais próximo no caso a minha div video.*/
+    top: 5%;
+    left: 5%;
+    width:90%;
+    height: 90%;
+}
+aside{
+    max-width: 100%; /*para ocupar todo o conteúdo*/
+    background-color: #c5ebd6;
+    padding-bottom: 10px;
+    
+}
+aside>h3{
+    background-color: #5BA361;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+aside>p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;/*dar espaço entre as linhas*/
+    padding-left: 5px;
+    padding-right: 5px;
+}
+aside>ul{
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714'; /*devo ir no emojipedia para verificar qual código do emoji colocar*/
+}
+aside>p>strong{
+    color:#5d9476;
+    
+}
+footer{
+    text-align: center;
+    background-color: #28572C;
+    color: white;
+}
+footer>strong{
+    color: white;
+    
+}
