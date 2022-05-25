@@ -55,8 +55,8 @@ nav>a:hover{
     background-color: rgb(47, 255, 151);
 }
 main{
-    min-width: 300px; /* definindo a largura minima para gerar responsividade*/
-    max-width: 810px;
+    min-width: 320px; /* definindo a largura minima para gerar responsividade*/
+    max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
