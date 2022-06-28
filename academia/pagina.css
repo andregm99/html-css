@@ -1,0 +1,74 @@
+@font-face { /*quando a fonte for baixada devo utilizar o font-face.*/
+
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+:root{
+    --fonte-android:'Android'
+}
+h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: black;
+}
+section{
+    background: rgb(36, 34, 34);
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    height: 450px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+section h1{
+    padding-top: 10px;
+    font-family: var(--fonte-android);
+    color: #f60141;
+    font-size: 2em;
+}
+
+.botão{
+    padding: 10px;
+    background-color: transparent;
+    transition-duration: .5s;
+    border-radius: 5px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.botão:hover{
+    background-color: #f60141;
+}
+label{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+table{
+    color: white;
+    border: white;
+    margin: auto;
+    margin-top: 12px;
+}
+#res{
+    color: white;
+}
+#peso{
+    margin-left: 12px;
+}
